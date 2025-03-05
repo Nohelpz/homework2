@@ -39,7 +39,7 @@ class _AirQualityScreenState extends State<AirQualityScreen> {
 
   Future<void> fetchAirQuality() async {
     final url =
-        Uri.parse("https://api.waqi.info/feed/here/?token=YOUR_API_TOKEN");
+        Uri.parse("https://api.waqi.info/feed/here/?token=729f8b0a74794cc970e3a011b6ee1a39cd8d9e89");
 
     try {
       final response = await http.get(url);
@@ -90,9 +90,9 @@ class _AirQualityScreenState extends State<AirQualityScreen> {
           const Color.fromARGB(255, 240, 245, 232), // Lighter green background
       appBar: AppBar(
         title: Text("Air Quality Index (AQI)",
-            style: TextStyle(color: Colors.green)), // Green title color
+            style: TextStyle(color: const Color.fromARGB(255, 82, 0, 170))), // Green title color
         backgroundColor:
-            Colors.green[200], // Lighter green for app bar background
+            const Color.fromARGB(255, 231, 80, 188), // Lighter green for app bar background
       ),
       body: Center(
         child: isLoading
